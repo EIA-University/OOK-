@@ -103,9 +103,9 @@ public class Sierris {
 	}
 
 	public static void main(String[] args) {
-		System.out.print("Hola mundo");
+		System.out.print(System.getProperty("user.dir")+"/ook.txt\n");
 		try {
-			Ook(leerFichero("/home/juan/Escritorio/OokInterpreter/ook.txt"));
+			Ook(leerFichero(System.getProperty("user.dir")+"/ook.txt"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
