@@ -103,6 +103,7 @@ public class CompiOok {
 	}
 
 	public static void main(String[] args) {
+		System.out.prinln("Hola mundo");
 		try {
 			Ook(leerFichero("C:/Users/Juanes/Desktop/EIA/Compiladores/ook.txt"));
 		} catch (IOException e) {
