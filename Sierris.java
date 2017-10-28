@@ -7,7 +7,7 @@ import java.rmi.server.ServerNotActiveException;
 import java.util.Stack;
 
 //profe este código no compila los saltos que hace el Ook, yo estaba pensando en re-hacerlo si algo lo acualizo
-public class CompiOok {
+public class Sierris {
 	public static String leerFichero(String ruta) throws IOException {
 		FileReader file = new FileReader(ruta);
 		BufferedReader bf = new BufferedReader(file);
@@ -103,9 +103,9 @@ public class CompiOok {
 	}
 
 	public static void main(String[] args) {
-		System.out.prinln("Hola mundo");
+		System.out.print("Hola mundo");
 		try {
-			Ook(leerFichero("C:/Users/Juanes/Desktop/EIA/Compiladores/ook.txt"));
+			Ook(leerFichero("/home/juan/Escritorio/OokInterpreter/ook.txt"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
